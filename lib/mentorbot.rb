@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
-class Mentor
-    require_relative 'question'
-    require_relative 'advice'
+class Mentorbot
+    require 'mentorbot/question'
+    require 'mentorbot/advice'
 
     attr_reader :questions_list, :advice_list
 
@@ -37,5 +37,5 @@ class Mentor
     end
 end
 
-m = Mentor.new
+m = Mentorbot.new
 m.ask_question(m.questions_list[0])
