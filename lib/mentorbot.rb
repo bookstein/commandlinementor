@@ -36,6 +36,3 @@ class Mentorbot
         a.say
     end
 end
-
-m = Mentorbot.new
-m.ask_question(m.questions_list[0])
